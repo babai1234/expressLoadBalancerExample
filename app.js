@@ -23,7 +23,7 @@ function getHostIpAddress() {
 }
 
 // Define a route handler for the root URL
-app.get("/", (req, res) => {
+app.get("/test", (req, res) => {
     // Get the host machine's IP address
     const hostIpAddress = getHostIpAddress();
 
