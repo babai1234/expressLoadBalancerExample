@@ -6,7 +6,7 @@ const os = require("os");
 const app = express();
 
 // Define a port for the server to listen on
-const PORT = 3000;
+const PORT = 80;
 
 // Function to get the IP address of the host machine
 function getHostIpAddress() {
@@ -23,7 +23,7 @@ function getHostIpAddress() {
 }
 
 // Define a route handler for the root URL
-app.get("/test", (req, res) => {
+app.get("/", (req, res) => {
     // Get the host machine's IP address
     const hostIpAddress = getHostIpAddress();
 
